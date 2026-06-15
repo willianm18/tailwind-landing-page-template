@@ -92,7 +92,7 @@ const jsonLd = {
         contactType: "customer service",
         availableLanguage: "Portuguese",
       },
-      email: "admin@metax.ind.br",
+      email: "willian_ramthun@hotmail.com",
       areaServed: "BR",
       sameAs: [`https://wa.me/5551996658329`],
     },
@@ -104,7 +104,7 @@ const jsonLd = {
         "Automação de processos e desenvolvimento de sistemas web sob medida para empresas no Rio Grande do Sul e em todo o Brasil.",
       url: SITE_URL,
       telephone: "+55-51-99665-8329",
-      email: "admin@metax.ind.br",
+      email: "willian_ramthun@hotmail.com",
       address: {
         "@type": "PostalAddress",
         addressRegion: "RS",

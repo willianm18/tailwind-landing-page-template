@@ -51,10 +51,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:admin@metax.ind.br"
+                  href="mailto:willian_ramthun@hotmail.com"
                   className="transition-colors hover:text-foreground"
                 >
-                  admin@metax.ind.br
+                  willian_ramthun@hotmail.com
                 </a>
               </li>
               <li>Rio Grande do Sul, RS</li>
