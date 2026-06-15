@@ -7,7 +7,7 @@ const WHATSAPP_BASE = `https://wa.me/${PHONE}`;
 
 export default function Contact() {
   return (
-    <section id="contato" className="relative py-20 md:py-28">
+    <section id="contato" className="relative py-12 md:py-16">
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-primary/5 blur-[100px]" />
         <div className="absolute -left-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-emerald-500/5 blur-[100px]" />

@@ -73,9 +73,9 @@ const benefits = [
 
 export default function WhyAutomate() {
   return (
-    <section className="border-y border-border/40 bg-muted/20 py-20 md:py-28">
+    <section className="border-y border-border/40 bg-muted/20 py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-16 max-w-2xl text-center">
+        <div className="mx-auto mb-10 max-w-2xl text-center">
           <Badge variant="outline" className="border-primary/30 bg-primary/5 mb-4 px-4 py-1.5 text-xs font-medium text-primary">
             Por que automatizar?
           </Badge>
