@@ -7,9 +7,10 @@ interface CounterProps {
   suffix?: string;
   label: string;
   prefix?: string;
+  description: string;
 }
 
-function Counter({ end, suffix = "", label, prefix = "" }: CounterProps) {
+function Counter({ end, suffix = "", label, prefix = "", description }: CounterProps) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
@@ -43,12 +44,13 @@ function Counter({ end, suffix = "", label, prefix = "" }: CounterProps) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-heading text-4xl font-bold tracking-tight md:text-5xl">
+      <div className="font-heading text-4xl font-bold tracking-tight text-primary md:text-5xl">
         {prefix}
         {count}
         {suffix}
       </div>
-      <p className="mt-2 text-sm text-muted-foreground">{label}</p>
+      <p className="mt-1 text-base font-semibold text-foreground">{label}</p>
+      <p className="mt-1 text-sm text-muted-foreground">{description}</p>
     </div>
   );
 }
@@ -58,10 +60,10 @@ export default function Metrics() {
     <section className="relative border-y border-border/40 bg-muted/20 py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          <Counter end={150} suffix="+" label="Projetos entregues" />
-          <Counter end={50} suffix="+" label="Clientes ativos" />
-          <Counter end={98} suffix="%" label="Satisfação dos clientes" />
-          <Counter end={5} suffix=" anos" label="De experiência em automação" />
+          <Counter end={40} suffix="%" label="Menos tempo gasto" description="em tarefas repetitivas" />
+          <Counter end={3} suffix="x" label="Mais produtividade" description="com processos automatizados" />
+          <Counter end={100} suffix="%" label="Feito sob medida" description="para o seu negócio" />
+          <Counter end={24} suffix="h" label="Funcionando" description="por dia, todos os dias" />
         </div>
       </div>
     </section>

@@ -10,18 +10,18 @@ export default function Footer() {
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <Logo />
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Automatizamos processos e desenvolvemos sistemas web sob medida para impulsionar o crescimento do seu negócio.
+              Automatizo processos e desenvolvo sistemas web sob medida para impulsionar o crescimento do seu negócio.
             </p>
           </div>
 
           {/* Services */}
           <div className="space-y-3">
-            <h3 className="text-sm font-semibold text-foreground">Serviços</h3>
+            <h3 className="text-sm font-semibold text-foreground">Soluções</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#servicos" className="text-muted-foreground transition-colors hover:text-foreground">Automação WhatsApp</Link></li>
-              <li><Link href="#servicos" className="text-muted-foreground transition-colors hover:text-foreground">Pagamentos & Boletos</Link></li>
+              <li><Link href="#servicos" className="text-muted-foreground transition-colors hover:text-foreground">Automação de Processos</Link></li>
               <li><Link href="#servicos" className="text-muted-foreground transition-colors hover:text-foreground">Sistemas Web</Link></li>
-              <li><Link href="#servicos" className="text-muted-foreground transition-colors hover:text-foreground">APIs & Integrações</Link></li>
+              <li><Link href="#servicos" className="text-muted-foreground transition-colors hover:text-foreground">Integrações & APIs</Link></li>
+              <li><Link href="#servicos" className="text-muted-foreground transition-colors hover:text-foreground">Consultoria</Link></li>
             </ul>
           </div>
 
@@ -29,8 +29,8 @@ export default function Footer() {
           <div className="space-y-3">
             <h3 className="text-sm font-semibold text-foreground">Empresa</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#processo" className="text-muted-foreground transition-colors hover:text-foreground">Metodologia</Link></li>
-              <li><Link href="#cases" className="text-muted-foreground transition-colors hover:text-foreground">Cases</Link></li>
+              <li><Link href="#processo" className="text-muted-foreground transition-colors hover:text-foreground">Como funciona</Link></li>
+              <li><Link href="#cases" className="text-muted-foreground transition-colors hover:text-foreground">Clientes</Link></li>
               <li><Link href="#contato" className="text-muted-foreground transition-colors hover:text-foreground">Contato</Link></li>
             </ul>
           </div>
@@ -39,9 +39,25 @@ export default function Footer() {
           <div className="space-y-3">
             <h3 className="text-sm font-semibold text-foreground">Contato</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>contato@nexflow.com.br</li>
-              <li>(11) 99999-8888</li>
-              <li>São Paulo, SP</li>
+              <li>
+                <a
+                  href="https://wa.me/5551996658329"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-foreground"
+                >
+                  (51) 99665-8329
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:admin@metax.ind.br"
+                  className="transition-colors hover:text-foreground"
+                >
+                  admin@metax.ind.br
+                </a>
+              </li>
+              <li>Rio Grande do Sul, RS</li>
             </ul>
           </div>
         </div>

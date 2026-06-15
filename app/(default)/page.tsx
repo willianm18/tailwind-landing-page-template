@@ -1,14 +1,19 @@
 export const metadata = {
-  title: "NexFlow - Automação Inteligente & Desenvolvimento Web",
+  title: {
+    absolute: "NexFlow - Automação & Desenvolvimento de Sistemas | RS/Brasil",
+  },
   description:
-    "Automatize fluxos de pagamentos e boletos. Desenvolvemos sistemas web sob medida para sua empresa.",
+    "Automatize qualquer processo do seu negócio. Sistemas web sob medida, integrações e consultoria em automação. Rio Grande do Sul e todo o Brasil.",
+  alternates: {
+    canonical: "https://landing-page.willianramthun.store",
+  },
 };
 
 import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Metrics from "@/components/metrics";
 import Process from "@/components/process";
-import TechStack from "@/components/tech-stack";
+import WhyAutomate from "@/components/tech-stack";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 
@@ -16,10 +21,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Services />
       <Metrics />
+      <Services />
+      <WhyAutomate />
       <Process />
-      <TechStack />
       <Testimonials />
       <Contact />
     </>
