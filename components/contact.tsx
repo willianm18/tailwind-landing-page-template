@@ -44,6 +44,8 @@ export default function Contact() {
 
             <a
               href="mailto:willian_ramthun@hotmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-xl border border-border bg-card px-8 text-base font-semibold text-foreground transition-all hover:bg-muted sm:w-auto"
             >
               <svg className="h-5 w-5 text-muted-foreground" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">

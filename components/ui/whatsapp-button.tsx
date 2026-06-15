@@ -15,7 +15,8 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-emerald-500 shadow-lg shadow-emerald-500/30 transition-all duration-300 hover:bg-emerald-600 hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/40"
+      className="fixed bottom-6 right-6 z-50 flex h-14 items-center overflow-hidden rounded-full bg-emerald-500 shadow-lg shadow-emerald-500/30 transition-all duration-300 hover:bg-emerald-600 hover:shadow-xl hover:shadow-emerald-500/40"
+      style={{ width: hovered ? "200px" : "56px" }}
       aria-label="Falar no WhatsApp"
     >
       <div className="flex h-14 w-14 shrink-0 items-center justify-center">
@@ -24,10 +25,12 @@ export default function WhatsAppButton() {
         </svg>
       </div>
       <span
-        className={`overflow-hidden text-sm font-semibold text-white transition-all duration-300 ${
-          hovered ? "max-w-[160px] pr-5 opacity-100" : "max-w-0 opacity-0"
-        }`}
-        style={{ whiteSpace: "nowrap" }}
+        className="whitespace-nowrap pr-5 text-sm font-semibold text-white"
+        style={{
+          opacity: hovered ? 1 : 0,
+          transition: "opacity 0.2s ease",
+          transitionDelay: hovered ? "0.1s" : "0s",
+        }}
       >
         Falar no WhatsApp
       </span>
